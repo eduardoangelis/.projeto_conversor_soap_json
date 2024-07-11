@@ -9,6 +9,7 @@ router = APIRouter()
 
 '''Criando a classe para receber os parametros da requisição validada pelo pydantic'''
 class PedidosExportarPedidosIn(BaseModel):
+    '''Criando os atributos de request com os tipos'''
     user: str
     password: str
     encryption: int
